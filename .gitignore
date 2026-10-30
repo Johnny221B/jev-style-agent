@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+outputs/
+logs/
+checkpoints/
+wandb/
+*.pt
+*.safetensors
+android_world/
+verl/
