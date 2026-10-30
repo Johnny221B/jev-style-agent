@@ -1,0 +1,17 @@
+environment: mock # mock or androidworld
+controller: hybrid # llm, jev, hybrid
+llm_model: Qwen/Qwen3-4B
+max_env_steps: 25
+max_jev_steps_per_handoff: 4
+confidence_threshold: 0.85
+return_threshold: 0.65
+max_candidates: 20
+max_history: 6
+cost:
+  llm_call: 1.0
+  jev_call: 0.05
+  environment_action: 0.01
+reward:
+  success: 1.0
+  failure: 0.0
+  cost_weight: 0.02
